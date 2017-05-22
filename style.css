@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,900&subset=latin-ext');
+
+*{
+font-family: 'Lato', sans-serif;	
+}
+
+#logo{
+	width:300px;
+	height:auto;
+	 padding-top: 30px;
+}
+
+#imgbg {
+    background: rgba(0, 0, 0, 0) url("img/bgimg.jpg") no-repeat scroll 0 0 / cover ;
+    height: 95vh;
+	position:relative;
+}
+#top{
+	height:5vh;
+}
+.navbar-nav > li > a {
+    color: rgb(100, 90, 83) !important;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 30px 15px 27px;
+    padding: 0 0 3px;
+    position: relative;
+    text-transform: uppercase;
+}
+.navbar-nav a.active{
+	color:rgb(75,133,75)!important;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgba(0,0,0,0);
+
+}
+.navbar-nav > li > a::after{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:1px;
+	width:0;
+	content:"";
+	transition:0.2s linear;
+	background: rgb(100, 90, 83);
+} 
+.navbar-nav .active::after{
+	background: rgb(75,133,75)!important;
+}
+.navbar-nav > li > a:hover::after{
+	width:100%;
+} 
+.box{
+    text-align: center;
+	cursor:default;
+    height: 300px;  
+	border-radius:5px;
+	position:relative;
+	overflow:hidden;
+	margin-top:35px;
+}
+.bg {
+    background: rgba(255, 255, 255, 0) none repeat scroll 0 0;
+    font-size: 5rem!important;
+    height: 90%;
+    left: 5%;
+    padding-top: 10%;
+    position: absolute;
+    top: 5%;
+    transition: all 0.2s linear 0s;
+    width: 90%;
+	border:3px solid rgba(0,0,0,0);
+}
+.box .bg{
+	color:rgba(0,0,0,0);
+    transition: all 0.2s linear 0s;
+	text-align:center!important;
+}
+.box:hover .bg{
+	background:rgba(255,255,255,0);
+	color:rgb(240,240,240);
+	border:3px solid white;
+}
+
+.box1{
+	background:url(img/box1.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.box2{
+	background:url(img/box2.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+.logoplace {
+    text-align: right;
+}
+#footer {
+    background: rgb(52, 52, 52) none repeat scroll 0 0;
+    color: #fff;
+    height: auto;
+    padding-top: 35px;
+	padding-bottom: 35px;
+    position: relative;
+    text-align: center;
+}
+
+.container.content{
+	margin-top:15px;
+	margin-bottom:35px;
+}
+#imgbg div{
+	text-align:center;
+	position:absolute;
+	bottom:55px;
+}
+
+.content .row div {
+    font-size: 2.5rem;
+	text-align: justify;
+}
+.aside em {
+    font-weight: bold;
+	position:relative;
+	
+}
+.aside em::after{
+	position:absolute;
+	content:"";
+	left:0;
+	bottom:0;
+	width:100%;
+	height:2px;
+	background:red;
+}
+button {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid rgb(52, 52, 52);
+    color: rgb(52, 52, 52);
+    float: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 11px;
+    text-transform: uppercase;
+	transition:0.2s linear;
+}
+
+button:hover{
+	background:rgb(0,0,0);
+	color:#fff;
+}
+.aside {
+    font-size: 2rem !important;
+    margin-top: 35px;
+	text-align:left!important;
+}
+h3.title {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.news {
+    background: red none repeat scroll 0 0;
+    height: 400px;
+}
+.pointa {
+    background: rgb(52, 52, 52) none repeat scroll 0 0;
+    color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.pointa h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 35px;
+}
+.pointa .col-md-12 {
+    height: 180px;
+}
+.bottomA{
+	margin-top:35px;
+	margin-bottom:35px;
+    font-size: 3.5rem;
+}
+
+.aside img{
+	width:100%;
+	height:auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	border-radius:5px
+}
+@media all and (max-width:1118px){
+	.col-sm-offset-4 {
+    margin-left: 8.333%;
+}
+.col-sm-4 {
+    width: 45.333%;
+}
+}
+@media all and (max-width : 992px) {
+	.logoplace {
+		text-align: left!important;
+	}
+	#logo{
+		padding-bottom: 15px;
+	}
+	#imgbg{
+		display:none;
+	}
+	#top{
+		height:auto!important;
+	}
+}
+@media all and (max-width:840px){
+	.navbar-collapse{
+		padding:0;
+	}
+}
